@@ -3,7 +3,7 @@
  	background-color: #FFFFFF !important; 
  	overflow-x: hidden;
  	margin: auto;
- 	text-align: center;
+ 	text-align: left;
  	font-family: "Avenir Next Regular",sans-serif;
  }
 
@@ -17,10 +17,14 @@
  	font-size: 48px;
  }
 
+/**/
+/* Header Stuff */
+/**/
+
 .video-header {
 	height: 100vh;
 	display: flex;
-	align-items: top
+	align-items: left;
 }
 
 .container {
@@ -52,7 +56,42 @@
 .header-content{
 	z-index:2;
 	color: #FFF;
-	text-align: center;
+	text-align: left;
 	margin:auto;
+
 }
+
+.header-content h2{
+  overflow: hidden; /* nothing on start */
+  border-right: .05em solid orange; /* the cursor */
+  white-space: nowrap; /* single line stuff */
+  margin: 0 auto; /* for the movement */
+  animation: typing 2.5s steps(100, end), cursor 1s 2.5s infinite;
+}
+
+.to-change:after
+{
+  animation: words 5s 2.5s steps(100, end) infinite;
+  content:"write cool code";
+  color: orange;
+}
+
+@keyframes typing{
+  from{ width: 0 }
+  to{ width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes cursor{
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+@keyframes words{
+	from, to {content: "write cool code"; width:0%;}
+	33%{content: "create projects";}
+	66%{content: "shape the world";}
+
+}
+
 
