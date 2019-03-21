@@ -9,11 +9,36 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- My Style Sheet -->
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
 
 	<title>yup</title>
 </head>
+
+<!-- Main Body -->
 <body>
-	<h1>Started an empty flask project</h1>
+
+	<!-- Video Area -->
+	<header class="video-header container">
+		
+		<!-- Actual Video -->
+		<div class="video-wrapper">
+			<video autoplay muted loop>
+				<source src="{{ url_for('static', filename='media/Love-Coding.mp4') }}" type="video/mp4">
+			</video>
+		</div>
+
+		<!-- Adding some color on it -->
+		<div class="header-overlay"></div>
+
+		<!-- Something to write on top -->
+		<div class="header-content">
+			<h2> Hi! I'm <strong>Aakaash</strong> and I love to <strong>code</strong>. </h2>
+		</div>
+
+
+	</header>
+	<div class="next">
+		<h1> So I am writing stuff here </h1>
+	</div>
 </body>
 </html>

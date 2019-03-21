@@ -1,0 +1,58 @@
+ body 
+ { 
+ 	background-color: #FFFFFF !important; 
+ 	overflow-x: hidden;
+ 	margin: auto;
+ 	text-align: center;
+ 	font-family: "Avenir Next Regular",sans-serif;
+ }
+
+ h1
+ {
+ 	color: #323214;
+ }
+
+ h2
+ {
+ 	font-size: 48px;
+ }
+
+.video-header {
+	height: 100vh;
+	display: flex;
+	align-items: top
+}
+
+.container {
+	max-width: 960px;
+	margin: auto;
+	text-align: center;
+}
+
+.video-wrapper{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.header-overlay{
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #119;
+	z-index: 1;
+	opacity: 0.2;
+}
+
+.header-content{
+	z-index:2;
+	color: #FFF;
+	text-align: center;
+	margin:auto;
+}
+
