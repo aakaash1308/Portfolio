@@ -58,14 +58,13 @@
 	color: #FFF;
 	text-align: left;
 	margin:auto;
-
 }
 
 .header-content h2{
-  overflow: hidden; /* nothing on start */
-  border-right: .05em solid orange; /* the cursor */
-  white-space: nowrap; /* single line stuff */
-  margin: 0 auto; /* for the movement */
+  overflow: hidden; 
+  border-right: .05em solid orange; 
+  white-space: nowrap; 
+  margin: 0 auto; 
   animation: typing 2.5s steps(100, end), cursor 1s 2.5s infinite;
 }
 
@@ -94,4 +93,56 @@
 
 }
 
+.navbar{
+	z-index: 3;
+	margin: 0;
+	padding: 2% 25%;
+	list-style: none;
+}
+
+nav a{
+	color:white;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Avenir Next Thin",sans-serif;
+
+}
+
+nav ul{
+	margin: 0;
+	padding: 0% 100%;
+	list-style: none;
+}
+
+nav li{
+	display: inline-block;
+	position: relative;
+	/*margin-left: 1%;
+	margin-right: 2%;*/
+}
+
+nav a:hover{
+	text-decoration: none;
+	color: #EEEEEE;
+}
+
+nav a:after{
+	content: '';
+	display: block;
+	height: 2px;
+	width: 0%;
+	background-color: orange;
+	transition: all ease-in-out 250ms;
+}
+
+nav a:hover:after
+{
+	width: 100%;
+}
+
+nav a:active:after
+{
+	width: 100%;
+	background-color:white;
+}
 

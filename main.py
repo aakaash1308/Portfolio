@@ -22,4 +22,4 @@ if __name__ == '__main__':
 
 # REFRENCES
 # https://www.youtube.com/watch?v=MwZwr5Tvyxo
-# 17 17 17
+# https://css-tricks.com/almanac/properties/s/scroll-behavior/
